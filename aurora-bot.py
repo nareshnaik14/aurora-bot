@@ -206,84 +206,45 @@ Ask anything related to:
 # Chat History
 # ------------------------------
 
-if language == "English":
-    system_prompt = """
-You are the Placement and Career Assistant for Aurora PG College.
+translations = {
+    "English": {
+        "title": "🎓 Aurora PG College Career Assistant",
+        "welcome": "Welcome!",
+        "ask": "Ask about placements, careers, interviews, internships...",
+        "home": "🏠 Home",
+        "resume": "📄 Resume Tips",
+        "interview": "🎯 Interview Tips"
+    },
 
-Always reply ONLY in English.
+    "Hinglish": {
+        "title": "🎓 Aurora PG College Career Assistant",
+        "welcome": "Welcome!",
+        "ask": "Placement, career ya interview ke baare mein puchiye...",
+        "home": "🏠 Home",
+        "resume": "📄 Resume Tips",
+        "interview": "🎯 Interview Tips"
+    },
 
-Help students with:
-- Placements
-- IT Jobs
-- Government Jobs
-- Resume Building
-- Interview Preparation
-- Coding
-- Higher Education
-- Career Guidance
+    "తెలుగు": {
+        "title": "🎓 ఆరోరా పీజీ కాలేజ్ కెరీర్ అసిస్టెంట్",
+        "welcome": "స్వాగతం!",
+        "ask": "ప్లేస్‌మెంట్స్, కెరీర్, ఇంటర్వ్యూల గురించి అడగండి...",
+        "home": "🏠 హోమ్",
+        "resume": "📄 రెజ్యూమ్ సూచనలు",
+        "interview": "🎯 ఇంటర్వ్యూ సూచనలు"
+    }
+}
 
-Use simple, professional English.
-"""
+txt = translations[language]
 
-elif language == "Hinglish":
-    system_prompt = """
-You are the Placement and Career Assistant for Aurora PG College.
+st.title(txt["title"])
+st.write(txt["welcome"])
 
-Always reply ONLY in Hinglish (Hindi written in English letters).
+user_input = st.chat_input(txt["ask"])
 
-Help students with:
-- Placements
-- IT Jobs
-- Government Jobs
-- Resume Building
-- Interview Preparation
-- Coding
-- Higher Education
-- Career Guidance
-
-Example:
-Agar aap interview crack karna chahte hain to pehle resume strong banaiye aur coding practice daily kijiye.
-"""
-
-else:
-    system_prompt = """
-మీరు Aurora PG College యొక్క Career Assistant.
-
-ఎప్పుడూ తెలుగు భాషలో మాత్రమే సమాధానం ఇవ్వండి.
-
-విద్యార్థులకు ఈ అంశాలలో సహాయం చేయండి:
-
-• ప్లేస్‌మెంట్స్
-
-• ఐటీ ఉద్యోగాలు
-
-• ప్రభుత్వ ఉద్యోగాలు
-
-• రెజ్యూమ్ తయారీ
-
-• ఇంటర్వ్యూ ప్రిపరేషన్
-
-• కోడింగ్
-
-• ఉన్నత విద్య
-
-• కెరీర్ గైడెన్స్
-
-సులభమైన మరియు స్పష్టమైన తెలుగులో సమాధానం ఇవ్వండి.
-"""
 
 if "messages" not in st.session_state:
-    st.session_state.messages = [
-        {
-            "role": "system",
-            "content": system_prompt
-        }
-    ]
-
-if "messages" not in st.session_state:
-
     
-
     st.session_state.messages = [
 
         {
