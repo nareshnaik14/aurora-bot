@@ -24,6 +24,21 @@ client = OpenAI(api_key=api_key)
 # ------------------------------
 # Sidebar
 # ------------------------------
+# ------------------------------
+# Sidebar - API Key
+# ------------------------------
+with st.sidebar:
+
+    st.title("🎓 Aurora PG College")
+
+    st.markdown("### 🔑 OpenAI API Key")
+
+    api_key = st.text_input(
+        "Enter your OpenAI API Key",
+        type="password",
+        placeholder="sk-xxxxxxxxxxxxxxxxxxxxxxxx"
+    )
+
 with st.sidebar:
 
     st.title("🎓 Aurora PG College")
