@@ -72,7 +72,7 @@ with st.sidebar:
         st.success("Welcome to Aurora PG College Career Assistant.")
         st.write(
             """
-            This AI assistant helps students with:
+            This aurora pg college helps students with:
 
             ✅ Career Guidance
 
@@ -151,39 +151,8 @@ with st.sidebar:
         • Research the Company
         """)
 
-    elif option == "💻 Coding Platforms":
-        st.subheader("Practice Coding")
 
-        st.write("""
-        🔹 LeetCode
-
-        🔹 HackerRank
-
-        🔹 CodeChef
-
-        🔹 GeeksforGeeks
-
-        🔹 Codeforces
-        """)
-
-    elif option == "📚 Learning Resources":
-        st.subheader("Learning Platforms")
-
-        st.write("""
-        📘 Coursera
-
-        📘 Udemy
-
-        📘 freeCodeCamp
-
-        📘 NPTEL
-
-        📘 YouTube
-
-        📘 Kaggle
-        """)
-
-    elif option == "ℹ️ About App":
+    elif option == "ℹ️ aurora pg college":
         st.info(
             """
             Aurora PG College Career Assistant
