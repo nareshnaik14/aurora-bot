@@ -303,6 +303,13 @@ else:
 సులభమైన మరియు స్పష్టమైన తెలుగులో సమాధానం ఇవ్వండి.
 """
 
+if "messages" not in st.session_state:
+    st.session_state.messages = [
+        {
+            "role": "system",
+            "content": system_prompt
+        }
+    ]
 
 if "messages" not in st.session_state:
 
