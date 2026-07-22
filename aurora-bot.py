@@ -240,7 +240,7 @@ txt = translations[language]
 st.title(txt["title"])
 st.write(txt["welcome"])
 
-user_input = st.chat_input(txt["ask"])
+#user_input = st.chat_input(txt["ask"])
 
 
 if "messages" not in st.session_state:
