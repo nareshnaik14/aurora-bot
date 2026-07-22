@@ -39,11 +39,12 @@ with st.sidebar:
         placeholder="sk-xxxxxxxxxxxxxxxxxxxxxxxx"
     )
 with st.sidebar:
-st.markdown("### 🌐 Language")
+    st.title("### 🌐 Language")
+    st.markdown("---")
 
-language = st.selectbox(
-    "Choose Language",
-    ["English", "Hinglish", "తెలుగు"]
+       language = st.selectbox(
+        "Choose Language",
+        ["English", "Hinglish", "తెలుగు"]
 )
 
 with st.sidebar:
