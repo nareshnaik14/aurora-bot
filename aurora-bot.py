@@ -66,7 +66,6 @@ with st.sidebar:
     )
 
 with st.sidebar:
-  if option == "📞 Contact Us":
 
     st.title("📞 Contact Aurora PG College")
 
