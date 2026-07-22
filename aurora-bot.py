@@ -49,7 +49,7 @@ with st.sidebar:
 
 with st.sidebar:
 
-    st.title("🎓 Aurora PG College")
+    st.title("🎓 Aurora PG College specifications")
 
     st.markdown("---")
 
@@ -60,11 +60,56 @@ with st.sidebar:
             "💼 Career Domains",
             "📄 Resume Tips",
             "🎯 Interview Tips",
-            "💻 Coding Platforms",
-            "📚 Learning Resources",
-            "ℹ️ About App"
+            
+           
         ]
     )
+
+    with st.sidebar:
+        if option == "📞 Contact Us":
+
+    st.title("📞 Contact Aurora PG College")
+
+    st.subheader("🏫 College Address")
+
+    st.write("""
+    Aurora PG College
+
+    nampally,
+
+    Hyderabad,
+
+    Telangana - 500001
+    """)
+
+    st.subheader("📞 Phone")
+
+    st.write("""
+    Admission Office: +91-XXXXXXXXXX
+
+    Placement Cell: +91-XXXXXXXXXX
+    """)
+
+    st.subheader("📧 Email")
+
+    st.write("""
+    admissions@aurora.edu.in
+
+    placements@aurora.edu.in
+    """)
+
+    st.subheader("🌐 Website")
+
+    st.write("https://www.aurora.edu.in")
+
+    st.subheader("🕒 Office Hours")
+
+    st.write("""
+    Monday - Saturday
+
+    9:00 AM – 5:00 PM
+    """)
+
 
     st.markdown("---")
 
