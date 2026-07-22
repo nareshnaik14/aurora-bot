@@ -201,6 +201,7 @@ st.title("🎓 Aurora PG College Career Assistant")
 
 st.write(
     """
+    Your personalised career assistant for Bhilwara degree students.
 Welcome!
 
 Ask anything related to:
