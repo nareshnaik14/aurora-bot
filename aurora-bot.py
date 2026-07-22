@@ -110,7 +110,7 @@ with st.sidebar:
     """)
 
 
-
+st.set_page_config(
 
     if option == "🏠 Home":
         st.success("Welcome to Aurora PG College Career Assistant.")
@@ -210,7 +210,7 @@ with st.sidebar:
             resume support and interview practice.
             """
         )
-
+)
 
 
 
