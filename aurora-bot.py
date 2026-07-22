@@ -110,7 +110,7 @@ with st.sidebar:
     """)
 
 
-    st.markdown("---")
+
 
     if option == "🏠 Home":
         st.success("Welcome to Aurora PG College Career Assistant.")
