@@ -42,7 +42,7 @@ with st.sidebar:
     st.title("### 🌐 Language")
     st.markdown("---")
 
-       language = st.selectbox(
+    language = st.selectbox(
         "Choose Language",
         ["English", "Hinglish", "తెలుగు"]
 )
