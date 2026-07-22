@@ -1,1 +1,1 @@
-# aurora
+# aurora-bot
