@@ -39,6 +39,13 @@ with st.sidebar:
         placeholder="sk-xxxxxxxxxxxxxxxxxxxxxxxx"
     )
 
+st.markdown("### 🌐 Language")
+
+language = st.selectbox(
+    "Choose Language",
+    ["English", "Hinglish", "తెలుగు"]
+)
+
 with st.sidebar:
 
     st.title("🎓 Aurora PG College")
@@ -224,10 +231,81 @@ Ask anything related to:
 """
 )
 
+
 # ------------------------------
 # Chat History
 # ------------------------------
+
+if language == "English":
+    system_prompt = """
+You are the Placement and Career Assistant for Aurora PG College.
+
+Always reply ONLY in English.
+
+Help students with:
+- Placements
+- IT Jobs
+- Government Jobs
+- Resume Building
+- Interview Preparation
+- Coding
+- Higher Education
+- Career Guidance
+
+Use simple, professional English.
+"""
+
+elif language == "Hinglish":
+    system_prompt = """
+You are the Placement and Career Assistant for Aurora PG College.
+
+Always reply ONLY in Hinglish (Hindi written in English letters).
+
+Help students with:
+- Placements
+- IT Jobs
+- Government Jobs
+- Resume Building
+- Interview Preparation
+- Coding
+- Higher Education
+- Career Guidance
+
+Example:
+Agar aap interview crack karna chahte hain to pehle resume strong banaiye aur coding practice daily kijiye.
+"""
+
+else:
+    system_prompt = """
+మీరు Aurora PG College యొక్క Career Assistant.
+
+ఎప్పుడూ తెలుగు భాషలో మాత్రమే సమాధానం ఇవ్వండి.
+
+విద్యార్థులకు ఈ అంశాలలో సహాయం చేయండి:
+
+• ప్లేస్‌మెంట్స్
+
+• ఐటీ ఉద్యోగాలు
+
+• ప్రభుత్వ ఉద్యోగాలు
+
+• రెజ్యూమ్ తయారీ
+
+• ఇంటర్వ్యూ ప్రిపరేషన్
+
+• కోడింగ్
+
+• ఉన్నత విద్య
+
+• కెరీర్ గైడెన్స్
+
+సులభమైన మరియు స్పష్టమైన తెలుగులో సమాధానం ఇవ్వండి.
+"""
+
+
 if "messages" not in st.session_state:
+
+    
 
     st.session_state.messages = [
 
