@@ -38,7 +38,7 @@ with st.sidebar:
         type="password",
         placeholder="sk-xxxxxxxxxxxxxxxxxxxxxxxx"
     )
-
+with st.sidebar:
 st.markdown("### 🌐 Language")
 
 language = st.selectbox(
