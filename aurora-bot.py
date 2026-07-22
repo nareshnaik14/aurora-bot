@@ -190,12 +190,8 @@ with st.sidebar:
             """
         )
 
-# Check API Key
-if not api_key:
-    st.warning("👈 Please enter your OpenAI API Key in the left sidebar.")
-    st.stop()
 
-client = OpenAI(api_key=api_key)
+
 
 # ------------------------------
 # Main Page
